@@ -1,0 +1,54 @@
+[% WRAPPER ui title = global.conference.name %]
+        <h2><t><de>16. Deutscher Perl-Workshop 2015 in Hannover<br>vom 26. bis 28. März 2015</de><en>16th German Perl Workshop 2014 in Hanover<br>from 26th to 28th March 2014</en></t></h2>
+        <p style="text-align: justify"><t><de>
+					Der Deutsche Perl-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprache Perl.
+					Er findet 2014 im Kulturzentrum FAUST ("Warenannahme") in Hannover statt.
+					Die Vorträge werden überwiegend in Deutsch gehalten, Vorträge auf Englisch sind aber auch willkommen.
+				</de><en>
+					The German Perl Workshop is a conference about the Perl Programming Language. It is organized by Perl developers.
+					The 2014 GPW takes place in Hannover. The venue is called "Kulturzentrum FAUST Warenannahme".
+					Most of the talks will be held in German, but talks in English are welcome as well of course.
+				</en></t></p>
+				<p><a href="register"><t><de>Jetzt für den Workshop anmelden</de><en>Signup for attendance now</en></t></a></p>
+				<p style="font-size: 1em; color: blue;"><strong>Countdown:</strong>
+					<t><de>Nur noch</de><en>Only</en></t>
+					<img src="http://hannover.pm/gpw2014/counter-[% global.request.language %].png" style="vertical-align: bottom">
+				</p>
+				<h3><t><de>Wir suchen Dich als Vortragenden</de><en>See want you as an speaker</en></t></h3>
+				<p><a href="[% make_uri('wanted.html') %]"><t><de>Vorschläge für Vorträge</de><en>Talk suggestions</en></t></a></p>
+				<h3><t><de>Wichtige Informationen</de><en>Imporant information</en></t></h3>
+				<ul>
+					<li><t><de>Details zum</de><en>About the</en></t> <a href="wiki?node=Veranstaltungsort"><t><de>Veranstaltungsort</de><en>venue</en></t></a></li>
+					<!-- <li><a href="preise.html"><t><de>Preisübersicht</de><en>Pricing</en></t></a></li> -->
+					<li><t><de>Vortragende bringen idealerweise ihren eigenen Laptop mit, auf dem der Vortrag präsentiert wird. Der Beamer hat einen VGA-Anschluss. Wir versuchen, für eventuell nötige Adapter zu sorgen</de><en>    If you give a talk, please try to bring your own laptop for the presentation. The projector has a VGA port. We will try to provide adapters.</en></t></li>
+					<li><t><de>Schickt uns Euren Vortrag zusätzlich vorher als PDF</de><en>    Please also send us your presentation as a PDF file</en></t></li>
+				</ul>
+				<p><t><de>E-Mail Kontakt</de><en>E-mail contact</en></t>: <a href="mailto:gpw2014@hannover.pm">gpw2014@hannover.pm</a></p>
+
+[%
+	news = global.news(3);
+	IF news.size > 2;
+		more = news.pop;
+	END;
+%]
+[% IF news.size %]
+				<h3><t><de>Letzte News</de><en>Latest news</en></t></h3>
+[% FOREACH item = news %]
+				<article class="news-entry">
+					<header class="news-header">
+						<h4>
+							<span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+							<span class="news-title">[% item.title %]</span>
+						</h4>
+					</header>
+					<section class="news-text">
+						[% item.content %]
+					</section>
+				</article>
+[% END %]
+[% END %]
+[% IF more %]
+				<p><a href="news" class="news-link"><t><de>Alle News</de><en>All news</en></t></a></p>
+[% END %]
+
+[% END %]
