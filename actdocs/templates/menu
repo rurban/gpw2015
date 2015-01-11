@@ -10,7 +10,7 @@
 
     <li class="section"><a href="[% make_uri('hotels.html') %]"><t><de>Hotels</de><en>Hotels</en></t></a></li>
 
-    [% PROCESS menus/wiki %]
+    [%# PROCESS menus/wiki %]
     [% PROCESS menus/talks %]
 
 [% END %]
