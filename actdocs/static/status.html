@@ -1,4 +1,5 @@
-[% WRAPPER ui_light title = global.conference.name %]
+[% WRAPPER ui title = global.conference.name %]
+
         <meta http-equiv="refresh" content="30; url=tweets.html">
         <h2><t><de>Deutscher Perl-Workshop 2014 Status</de><en>German Perl Workshop 2014 status</en></t></h2>
         <small style="float: right;">Tweets in <var id="nextpagecowntdown"></var> sec</small>
@@ -46,4 +47,5 @@
     nextpagecowntdown('30.0');
     window.setInterval(nextpagecowntdown, 100);
   </script>
+
 [% END %]
