@@ -1,6 +1,8 @@
 [% WRAPPER ui title = loc("Confirmation required") %]
 
-<p>{{This operation requires a confirmation. Please enter your email address,}}</p>
+<!--
+    <p>{{This operation requires a confirmation. Please enter your email address,}}</p>
+-->
 
 [% PROCESS error
    msgs = {
@@ -15,8 +17,8 @@
             Mit dieser Registrierung ist auch eine Anmeldung bei der YAPC Europe und anderen Perl-Workshops möglich.
         </de>
         <en>
-            To register for the German Perl Workshop it's necessary to register at the conference system of YAPC Europe. 
-            This step allows you to register for YAPC Europe and other Perl workshops.
+            To register for the German Perl Workshop it's necessary to register at the conference system of YAPC Europe first. 
+            This step also allows you to register for YAPC Europe and other Perl workshops.
         </en>
     </t>
 </p>
