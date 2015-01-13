@@ -9,14 +9,16 @@
   }
 %]
 <p>
-    <de>
-        Zum Anmelden beim  Deutschen Perl-Workshop ist es nötig, sich am Konferenzsystem der YAPC Europe zu registrieren. 
-        Mit dieser Registrierung ist auch eine Anmeldung bei der YAPC Europe und anderen Perl-Workshops möglich.
-    </de>
-    <en>
-        To register for the German Perl Workshop it's necessary to register at the conference system of YAPC Europe. 
-        This step allows you to register for YAPC Europe and other Perl workshops.
-    </en>
+    <t>
+        <de>
+            Zum Anmelden beim  Deutschen Perl-Workshop ist es nötig, sich am Konferenzsystem der YAPC Europe zu registrieren. 
+            Mit dieser Registrierung ist auch eine Anmeldung bei der YAPC Europe und anderen Perl-Workshops möglich.
+        </de>
+        <en>
+            To register for the German Perl Workshop it's necessary to register at the conference system of YAPC Europe. 
+            This step allows you to register for YAPC Europe and other Perl workshops.
+        </en>
+    </t>
 </p>
 
 <form method="POST" action="[% global.request.r.uri %]">
