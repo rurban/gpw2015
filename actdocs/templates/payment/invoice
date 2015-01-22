@@ -48,7 +48,7 @@ Homepage: http://frankfurt.pm<br>
             <tr>
               <td align="center">[% invoice.invoice_no %]</td>
               <td align="center">[% date_format(invoice.datetime, 'date_short') %]</td>
-	      <td align="center">13.3.2014</td>
+	      <td align="center">1.5.2015</td>
             </tr>
 	  </table>
         </td>
@@ -77,7 +77,7 @@ Homepage: http://frankfurt.pm<br>
               </td>
             </tr>
               <tr>
-              <td align="left">Deutscher Perl-Workshop 26.-28.03.2014 [% item.name %]</td>
+              <td align="left">Deutscher Perl-Workshop 6-8.05.2015 [% item.name %]</td>
               </tr>
             [% FOREACH item IN order.items %]
             <tr>
@@ -104,7 +104,7 @@ Homepage: http://frankfurt.pm<br>
             <tr> <td> IBAN</td><td > DE83500905000004950960</td></tr>	
             <tr> <td> BIC</td><td > GENODEF1S12</td></tr>	
             <tr> <td> Bank</td><td > Sparda Hessen eG</td></tr>	
-            <tr valign="top"> <td> Verwendungszweck</td><td>DPW 2014<br/>BestellNr.: <em>Bestellnummer</em><br/><em>Nachname, Vorname</em></td></tr>		
+            <tr valign="top"> <td> Verwendungszweck</td><td>DPW 2015 Dresden<br/>BestellNr.: <em>Bestellnummer</em><br/><em>Nachname, Vorname</em></td></tr>		
             <tr> 
 	      <td colspan="2">
 	      <p>Der Frankfurt Perlmongers ist ein gemeinn&uuml;tziger Verein weisst keine USt. aus.</p>
