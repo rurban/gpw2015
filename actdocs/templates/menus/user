@@ -1,4 +1,4 @@
-er menu -->
+<!-- user menu -->
 [% IF global.request.user %]
    [% WRAPPER menus/section %]
    <a href="[% make_uri_info('user', global.request.user.user_id) %]">{{Logged as:}} [% global.request.user.login %]</a>
