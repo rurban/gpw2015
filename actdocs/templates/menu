@@ -9,7 +9,7 @@
     [% PROCESS menus/news %]
 
     <li class="section"><a href="[% make_uri('hotels.html') %]"><t><de>Hotels</de><en>Hotels</en></t></a></li>
-    <t><de><li class="section"><a href="[% make_uri('dresden.html') %]">Dresden</a></li></de></t>
+    <li class="section"><a href="[% make_uri('dresden.html') %]">Dresden</a></li>
 
     [%# PROCESS menus/wiki %]
     [% PROCESS menus/talks %]
